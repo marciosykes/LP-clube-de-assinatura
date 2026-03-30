@@ -19,6 +19,11 @@ O desenvolvimento desta landing page foi uma oportunidade para aprofundar conhec
 - **Seção do Mês (`#month`)**: O destaque desta seção são as animações em loop dos elementos decorativos (marcadores de página, broche e setas) que flutuam ao redor da imagem principal do livro. Em desktops, ao passar o mouse sobre o kit mensal, os itens se afastam do livro central, revelando os textos que os acompanham.
 - **Seção de Preços (`#price`)**: Os cards de assinatura possuem uma transição de escala e cor ao passar o mouse, destacando a opção selecionada. As estrelas nos cards também giram com a interação do mouse.
 - **Rodapé (`footer`)**: A seção final apresenta um design diferenciado com um fundo de traços de livro. Os ícones de redes sociais têm uma animação de preenchimento ao passar o mouse, e os links do rodapé mudam de cor ao serem selecionados.
+- **Arquitetura de Ficheiros**: O CSS foi modularizado (ex: `hero.css`, `month.css`, `price.css`) para facilitar a manutenção e organização por secções.
+- **Containers Fluidos**: Substituição de larguras fixas pela variável `--max-width: 100%` no mobile, permitindo que as secções se adaptem ao viewport sem truncar o conteúdo.
+- **Estratégia de Exibição**: Uso da classe `.desktop-only` para ocultar elementos desnecessários no telemóvel, ativando-os apenas a partir de 750px para otimizar a interface.
+- **Animações de Scroll**: Utilização de `animation-timeline: view()` e efeitos interativos na secção do mês, onde os itens decorativos reagem ao movimento do rato em desktops.
+- **Grid Adaptável**: Na secção de preços, os cards de assinatura empilham-se automaticamente em coluna no mobile e organizam-se horizontalmente apenas em ecrãs maiores, evitando o transbordamento lateral.
 
 ## Recursos 💻
 - **Layout Responsivo**: O site é totalmente adaptado para diferentes tamanhos de tela, garantindo uma ótima experiência de navegação em dispositivos móveis e desktops.
